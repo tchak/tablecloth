@@ -25,14 +25,19 @@
   (copy ../../bucklescript/test/FloatTest.re ./FloatTest.re)))
 
 (rule
+ (target FunTest.re)
+ (action
+  (copy ../../bucklescript/test/FunTest.re ./FunTest.re)))
+
+(rule
  (target IntTest.re)
  (action
   (copy ../../bucklescript/test/IntTest.re ./IntTest.re)))
 
 (rule
- (target FunTest.re)
+ (target ListTest.re)
  (action
-  (copy ../../bucklescript/test/FunTest.re ./FunTest.re)))
+  (copy ../../bucklescript/test/ListTest.re ./ListTest.re)))
 
 (rule
  (target StringTest.re)

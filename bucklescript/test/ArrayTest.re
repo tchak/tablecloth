@@ -234,11 +234,7 @@ let suite =
 
       test("works the order of `f` is important", () => {
         expect(
-          map2(
-            ~f=Tuple2.create,
-            [|"alice", "bob", "chuck"|],
-            [|2, 5, 7, 8|],
-          ),
+          map2(~f=Tuple2.make, [|"alice", "bob", "chuck"|], [|2, 5, 7, 8|]),
         )
         |> toEqual(
              Eq.(array(pair(string, int))),
@@ -250,7 +246,7 @@ let suite =
     test("map3", () => {
       expect(
         map3(
-          ~f=Tuple3.create,
+          ~f=Tuple3.make,
           [|"alice", "bob", "chuck"|],
           [|2, 5, 7, 8|],
           [|true, false, true, false|],
