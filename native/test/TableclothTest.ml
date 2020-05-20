@@ -404,7 +404,6 @@ let t_Result () =
 
 
 let suite =
-  [ ("List", `Quick, t_List)
-  ; ("Option", `Quick, t_Option)
+  [ ("Option", `Quick, t_Option)
   ; ("Result", `Quick, t_Result)
   ]
