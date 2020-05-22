@@ -32,3 +32,14 @@
  (target TableclothString.mli)
  (action
   (copy ../../bucklescript/src/TableclothString.mli ./TableclothString.mli)))
+
+
+(rule
+ (target Vector.re)
+ (action
+  (copy ../../bucklescript/sources/Vector.re ./Vector.re)))
+
+(rule
+ (target Vector.mli)
+ (action
+  (copy ../../bucklescript/sources/Vector.mli ./Vector.mli)))

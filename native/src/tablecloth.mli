@@ -529,6 +529,8 @@ module List : sig
   *)
 end
 
+module Vector : module type of Vector
+
 module Result : sig
   type ('err, 'ok) t = ('ok, 'err) Base.Result.t
 

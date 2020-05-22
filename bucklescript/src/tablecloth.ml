@@ -979,3 +979,5 @@ module IntDict = struct
 end
 
 module Fun = Fun
+
+module Vector = Vector

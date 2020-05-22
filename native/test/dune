@@ -35,6 +35,11 @@
   (copy ../../bucklescript/test/StringTest.re ./StringTest.re)))
 
 (rule
+ (target VectorTest.re)
+ (action
+  (copy ../../bucklescript/test/VectorTest.re ./VectorTest.re)))
+
+(rule
  (alias runtest)
  (action
   (run ./runtest.exe)))

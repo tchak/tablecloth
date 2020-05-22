@@ -854,6 +854,8 @@ module List : sig
   val join : string t -> sep:string -> string
 end
 
+module Vector : module type of Vector
+
 (**
   This module implements the [Result] type, which has a variant for
   successful results (['ok]), and one for unsuccessful results (['error]).

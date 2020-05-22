@@ -611,6 +611,8 @@ module List = struct
     if count > 0 then value :: repeat ~count:(count - 1) value else []
 end
 
+module Vector = Vector
+
 module Option = struct
   type 'a t = 'a option
 
