@@ -1,8 +1,8 @@
 module Bool = Bool
-module Comparator = Comparator
 module Char = TableclothChar
 module Float = Float
 module Int = Int
+module Container = Container
 module Array = TableclothArray
 module List = TableclothList
 module Option = Option
@@ -10,6 +10,7 @@ module Result = Result
 module Tuple2 = Tuple2
 module Tuple3 = Tuple3
 module String = TableclothString
+module Comparator = Comparator
 module Set = TableclothSet
 module Map = TableclothMap
 module Fun = Fun
